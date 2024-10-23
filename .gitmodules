@@ -1,6 +1,8 @@
 [submodule "ft_printf"]
 	path = ft_printf
 	url = git@github.com:Rain36522/ft_printf.git
+	branch = main
 [submodule "get_next_line"]
 	path = get_next_line
 	url = git@github.com:Rain36522/get_next_line.git
+	branch = main
