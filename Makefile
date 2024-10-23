@@ -6,7 +6,7 @@
 #    By: pudry <pudry@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/27 09:01:54 by pudry             #+#    #+#              #
-#    Updated: 2023/12/08 11:07:30 by pudry            ###   ########.fr        #
+#    Updated: 2024/10/23 17:30:56 by pudry            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,6 +57,11 @@ TEXT_8   = "			              |   |  ${GREEN}C:\\> Starting minishell \033[1mSUCC
 
 
 all : $(NAME)
+
+init :
+	git submodule init
+	git submodule update
+	
 
 run : $(NAME) header compil
 	@make -C ft_printf/
@@ -234,6 +239,6 @@ go_down:
 
 
 
-.PHONY : fclean re all header clean go_back go_down compile run
+.PHONY : fclean re all header clean go_back go_down compile run init
 
 
