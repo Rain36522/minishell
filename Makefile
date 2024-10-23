@@ -6,7 +6,7 @@
 #    By: pudry <pudry@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/27 09:01:54 by pudry             #+#    #+#              #
-#    Updated: 2024/10/23 17:37:25 by pudry            ###   ########.fr        #
+#    Updated: 2024/10/23 17:39:11 by pudry            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,6 +61,7 @@ all : $(NAME)
 init :
 	git submodule init
 	git submodule update
+	make init -C ft_printf/
 	
 run : $(NAME) header compil
 	@make -C ft_printf/
